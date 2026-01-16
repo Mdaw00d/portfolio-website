@@ -13,7 +13,7 @@ function Navbar() {
     { name: 'My Projects', href: '#projects' },
     { name: 'Experience', href: '#experience' },
     { name: 'Education', href: '#education' },
-    { name: 'CV', href: '/cv', isRoute: true },
+    { name: 'My Resume', href: '/cv', isRoute: true },
     { name: 'Contact', href: '#contact' }
   ]
 

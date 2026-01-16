@@ -9,7 +9,7 @@ function CV() {
     location: "Pakistan",
     linkedin: "https://www.linkedin.com/in/muhammad-dawood-butt-113547260/",
     github: "https://github.com/Mdaw00d",
-    bio: "Skilled full-stack developer experienced in building responsive, high-performance websites and applications. Focused on clean UI/UX, scalable solutions, and modern development practices."
+    bio: "Skilled Web Developer with hands-on experience in building responsive, high-performance websites using HTML, CSS, Tailwind CSS, JavaScript, and React. Strong focus on clean UI/UX, scalability, and efficient performance. Recently exploring and implementing Agentic AI concepts to enhance automation, improve user interactions, and build smarter, autonomous web features. Capable of turning requirements into reliable, user-friendly digital solutions that align with business goals and modern AI-driven standards."
   }
 
   const education = [

@@ -24,7 +24,7 @@ function Hero() {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
               <img
-                src="/dp.jpg"
+                src="/img.jpg"
                 alt={portfolioProfile.name}
                 className="relative w-72 h-72 md:w-96 md:h-96 rounded-full object-cover ring-4 ring-gray-800 group-hover:scale-105 transition-transform duration-300"
               />

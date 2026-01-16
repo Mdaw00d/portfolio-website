@@ -13,6 +13,7 @@ function Navbar() {
     { name: 'My Projects', href: '#projects' },
     { name: 'Experience', href: '#experience' },
     { name: 'Education', href: '#education' },
+    { name: 'CV', href: '/cv', isRoute: true },
     { name: 'Contact', href: '#contact' }
   ]
 
@@ -45,15 +46,26 @@ function Navbar() {
           <div className="hidden md:block">
             <div className="flex items-center space-x-8">
               {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  onClick={(e) => handleNavClick(e, link.href)}
-                  className="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-all duration-300 hover:scale-105 transform relative group"
-                >
-                  {link.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 group-hover:w-full transition-all duration-300"></span>
-                </a>
+                link.isRoute ? (
+                  <Link
+                    key={link.name}
+                    to={link.href}
+                    className="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-all duration-300 hover:scale-105 transform relative group"
+                  >
+                    {link.name}
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 group-hover:w-full transition-all duration-300"></span>
+                  </Link>
+                ) : (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    onClick={(e) => handleNavClick(e, link.href)}
+                    className="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-all duration-300 hover:scale-105 transform relative group"
+                  >
+                    {link.name}
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 group-hover:w-full transition-all duration-300"></span>
+                  </a>
+                )
               ))}
             </div>
           </div>
@@ -99,14 +111,25 @@ function Navbar() {
       >
         <div className="px-2 pt-2 pb-3 space-y-1">
           {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              onClick={(e) => handleNavClick(e, link.href)}
-              className="text-gray-300 hover:text-cyan-400 hover:bg-gray-700 block px-3 py-3 rounded-lg text-base font-medium transition-all duration-300"
-            >
-              {link.name}
-            </a>
+            link.isRoute ? (
+              <Link
+                key={link.name}
+                to={link.href}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="text-gray-300 hover:text-cyan-400 hover:bg-gray-700 block px-3 py-3 rounded-lg text-base font-medium transition-all duration-300"
+              >
+                {link.name}
+              </Link>
+            ) : (
+              <a
+                key={link.name}
+                href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
+                className="text-gray-300 hover:text-cyan-400 hover:bg-gray-700 block px-3 py-3 rounded-lg text-base font-medium transition-all duration-300"
+              >
+                {link.name}
+              </a>
+            )
           ))}
         </div>
       </div>

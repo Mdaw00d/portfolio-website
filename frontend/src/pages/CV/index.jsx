@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom'
 function CV() {
   const profile = {
     name: "MUHAMMAD DAWOOD",
-    title: "Full-stack Developer",
+    title: "Frontend Developer",
     email: "dawdbutt66@gmail.com",
     phone: "+92 333 026 2115",
     location: "Pakistan",
     linkedin: "https://www.linkedin.com/in/muhammad-dawood-butt-113547260/",
     github: "https://github.com/Mdaw00d",
-    bio: "Skilled Web Developer with hands-on experience in building responsive, high-performance websites using HTML, CSS, Tailwind CSS, JavaScript, and React. Strong focus on clean UI/UX, scalability, and efficient performance. Recently exploring and implementing Agentic AI concepts to enhance automation, improve user interactions, and build smarter, autonomous web features. Capable of turning requirements into reliable, user-friendly digital solutions that align with business goals and modern AI-driven standards."
+    bio: "Skilled Frontend Developer with hands-on experience in building responsive, high-performance websites using HTML, CSS, Tailwind CSS, JavaScript, and React. Strong focus on clean UI/UX, scalability, and efficient performance. Recently exploring and implementing Agentic AI concepts to enhance automation, improve user interactions, and build smarter, autonomous web features. Capable of turning requirements into reliable, user-friendly digital solutions that align with business goals and modern AI-driven standards."
   }
 
   const education = [
